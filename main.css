@@ -70,23 +70,22 @@ ol {
   line-height: 38px;
 }
 
-.hero-box-bottom {
+.btn_wrapper {
   display: flex;
   column-gap: 30px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
-.hero-btn {
+.button {
   width: 328px;
+  cursor: pointer;
   padding: 20px 0;
   text-align: center;
   border-radius: 12px;
-  border: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: #fff;
+  border: 2px solid #6e3aba;
   background-color: #6e3aba;
+  color: white;
+  font-size: 18px;
 }
 
 .hero-btn2 {
@@ -128,6 +127,87 @@ ol {
 }
 
 .curse-item-desc {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 38px;
+}
+
+.button.secondary {
+  color: #6e3aba;
+  background-color: #fff;
+  border: 1px solid #6e3aba;
+}
+
+.purpleBg {
+  background-color: #6e3aba;
+  text-align: center;
+}
+
+.section.purpleBg {
+  padding-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+  padding-bottom: calc(41px + (88 - 41) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.h3 {
+  font-size: calc(34px + (52 - 34) * ((100vw - 375px) / (1280 - 375)));
+  /* Как построить уравнение прямой проходящей через две точки*/
+  font-weight: 700;
+  line-height: 118%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+  margin-bottom: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.timerElem .value {
+  font-family: Chava;
+  font-size: calc(34px + (52 - 34) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 187.05px;
+  color: #2f1d4e;
+}
+
+.timerElem .desc {
+  font-size: calc(10px + (27 - 60) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 500;
+  line-height: 118%;
+  text-transform: uppercase;
+}
+
+.promise {
+  padding: 120px 0;
+}
+
+.promise-title {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 69px;
+  margin-bottom: 50px;
+}
+
+.promise-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 300px;
+}
+
+.promise-item {
+  width: 400px;
+  padding: 10px;
+}
+
+.promise-item-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.promise-text {
   font-weight: 400;
   font-size: 27px;
   line-height: 38px;
