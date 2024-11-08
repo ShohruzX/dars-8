@@ -14,6 +14,14 @@ ol {
   list-style: none;
 }
 
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -213,53 +221,174 @@ ol {
   line-height: 38px;
 }
 
-.diploma{
+.diploma {
+  padding: 160px 0;
+}
+
+.text-align {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 1%;
+}
+
+.text-decoration {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.aboutUs {
   display: grid;
-  grid-template-columns:calc(330px + (430 - 330) * ((100vw - 375px) / (1280 - 375)));
-  grid-template-rows: auto auto;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
 }
 
-.diploma img {
-  width: 100%;
-  grid-row: 1 / 3;
+.box {
+  width: 578px;
 }
 
-@media (max-width: 710px) {
-  .diploma{
+.aboutUs_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.aboutUs h3 {
+  font-size: calc(22px + (27 - 22) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 600;
+  line-height: 170%;
+  text-transform: uppercase;
+  grid-row: 2 / 3; 
+}
+
+.stat {
+  font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.span {
+  font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+  line-height: 5%;
+}
+
+@media (max-width: 700px) {
+  .diploma {
     grid-template-columns: 1fr;
   }
 
-  .diploma img{
-    grid-row: 2/3;
+  .diploma img {
+    grid-row: 2 / 3;
+  }
+
+  .aboutUs {
+    grid-template-columns: 1fr;
   }
 }
 
-.aboutUs{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px 100px;
-
-  align-items: end;
+.teacher-skills {
+  flex-wrap: wrap;
+  gap: 90px;
 }
 
-.aboutUs h5 {
-  font-size:calc(22px + (27 - 22) * ((100vw -calc 375px) / (1280 - 375))) ;
-  font-weight: 600;
-  line-height: 140%;
-  text-transform: uppercase;
-
-  grid-row: 2/3;
+.skill {
+  width: 250px;
+  height: 104px;
 }
 
-.stat{
-  font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+.skill p {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29.4px;
+  text-align: left;
+}
+
+.name {
+  font-size: 48px;
   font-weight: 700;
-  line-height: 118%;
+  line-height: 58px;
+  text-align: left;
 }
 
-span{
-  font-size: calc(16px + (21 - 16) * ((100vw -calc 375px) / (1280 - 375)));
-  line-height: 140%;
+.job {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37.8px;
+  text-align: left;
 }
+
+.who {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 68.32px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.info {
+  width: 60%;
+}
+
+.teacher {
+  padding: 180px 0;
+}
+
+
+.program {
+  width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.program::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.promise-title h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lesson {
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.lesson:hover {
+  background-color: #f0f0f0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #6b4eff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5a3ae0;
+}
+
+
 
